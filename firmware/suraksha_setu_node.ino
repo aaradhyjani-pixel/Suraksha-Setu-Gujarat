@@ -53,7 +53,7 @@ const char* HOME_WIFI_PASS = "YOUR_WIFI_PASSWORD";
 const char* LOCAL_AP_SSID  = "SurakshaSetu-Node01";   // phones join this to read the node offline
 const char* LOCAL_AP_PASS  = "suraksha123";           // WPA2 needs at least 8 characters
 
-const char* SYNC_URL       = "https://suraksha-setu-2.vercel.app/api/esp32-sync";
+const char* SYNC_URL       = "https://YOUR-GUJARAT-APP.vercel.app/api/esp32-sync"; // fill in once this repo is deployed to Vercel
 
 const unsigned long FETCH_INTERVAL_MS = 10UL * 60UL * 1000UL;      // how often to check the internet, if present
 const unsigned long RETAIN_SECONDS    = 5UL * 24UL * 60UL * 60UL;  // 5-day on-device history retention
