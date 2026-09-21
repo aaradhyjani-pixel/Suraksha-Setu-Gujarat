@@ -159,6 +159,8 @@ const en = {
   h_fog: "Dense fog",
   forecastDetail: "What is forecast",
   warnedArea: "Area covered",
+  notifyTitle: "Get warned when you're not watching",
+  notifySub: "Severe and extreme alerts only. Nothing else.",
 };
 
 export type Key = keyof typeof en;
@@ -225,6 +227,7 @@ const dict: Record<Exclude<Lang, "en">, Partial<Record<Key, string>>> = {
     h_tsunami: "सुनामी", h_coldwave: "शीत लहर", h_dust_storm: "धूल भरी आँधी",
     h_landslide: "भूस्खलन", h_fire: "आग", h_fog: "घना कोहरा",
     forecastDetail: "क्या अनुमान है", warnedArea: "प्रभावित क्षेत्र",
+    notifyTitle: "न देख रहे हों तब भी चेतावनी पाएँ", notifySub: "सिर्फ़ गंभीर और अत्यंत गंभीर चेतावनियाँ।",
   },
   gu: {
     appTagline: "સત્તાવાર ચેતવણીને તમારી ચોક્કસ જગ્યા માટેનાં પગલાંમાં ફેરવે છે.",
@@ -284,6 +287,7 @@ const dict: Record<Exclude<Lang, "en">, Partial<Record<Key, string>>> = {
     h_tsunami: "સુનામી", h_coldwave: "શીત લહેર", h_dust_storm: "ધૂળની આંધી",
     h_landslide: "ભૂસ્ખલન", h_fire: "આગ", h_fog: "ગાઢ ધુમ્મસ",
     forecastDetail: "શું અનુમાન છે", warnedArea: "અસરગ્રસ્ત વિસ્તાર",
+    notifyTitle: "ન જોતા હો ત્યારે પણ ચેતવણી મેળવો", notifySub: "ફક્ત ગંભીર અને અત્યંત ગંભીર ચેતવણીઓ.",
   },
   ta: {
     appTagline: "அதிகாரப்பூர்வ எச்சரிக்கையை உங்கள் துல்லியமான இடத்துக்கான வழிமுறைகளாக மாற்றுகிறது.",
@@ -343,6 +347,7 @@ const dict: Record<Exclude<Lang, "en">, Partial<Record<Key, string>>> = {
     h_tsunami: "சுனாமி", h_coldwave: "குளிர் அலை", h_dust_storm: "தூசிப் புயல்",
     h_landslide: "நிலச்சரிவு", h_fire: "தீ", h_fog: "அடர் பனிமூட்டம்",
     forecastDetail: "என்ன எதிர்பார்க்கப்படுகிறது", warnedArea: "பாதிக்கப்படும் பகுதி",
+    notifyTitle: "பார்க்காத போதும் எச்சரிக்கை பெறுங்கள்", notifySub: "கடுமையான, மிகக் கடுமையான எச்சரிக்கைகள் மட்டும்.",
   },
   as: {
     appTagline: "চৰকাৰী সতৰ্কবাণীক আপোনাৰ থুপৰীয়া ঠাইৰ বাবে কৰণীয়ত সলনি কৰে।",
@@ -402,6 +407,7 @@ const dict: Record<Exclude<Lang, "en">, Partial<Record<Key, string>>> = {
     h_tsunami: "চুনামি", h_coldwave: "শীত প্ৰবাহ", h_dust_storm: "ধূলিৰ ধুমুহা",
     h_landslide: "ভূমিস্খলন", h_fire: "জুই", h_fog: "ঘন কুঁৱলী",
     forecastDetail: "কি পূৰ্বানুমান", warnedArea: "প্ৰভাৱিত অঞ্চল",
+    notifyTitle: "নাচালেও সতৰ্কবাণী পাওক", notifySub: "কেৱল গুৰুতৰ আৰু অতি গুৰুতৰ সতৰ্কবাণী।",
   },
 };
 

@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import AlertsOptIn from "@/components/AlertsOptIn";
 import Disclosure from "@/components/Disclosure";
 import HazardIcon from "@/components/HazardIcon";
 import { Check, ChevronDown, Hospital, Info, Phone, Warning } from "@/components/Icon";
@@ -138,6 +139,7 @@ export default function AlertScreen() {
   const [nothingYet, setNothingYet] = useState(false);
   const [muted, setMuted] = useState(false);
   const [ai, setAi] = useState<{ text: string | null; state: "" | "loading" | "unavailable" }>({ text: null, state: "" });
+  const [coords, setCoords] = useState<{ lat: number; lng: number; language: string } | null>(null);
 
   useEffect(() => setMuted(localStorage.getItem(MUTE_KEY) === "1"), []);
 
@@ -153,6 +155,7 @@ export default function AlertScreen() {
       return;
     }
     setPlace(p.label);
+    setCoords({ lat: p.lat, lng: p.lng, language: p.language });
 
     const qs = new URLSearchParams({
       lat: String(p.lat), lng: String(p.lng), district: p.district, state: p.state, label: p.label,
@@ -303,6 +306,8 @@ export default function AlertScreen() {
         <Link href="/help" className="btn"><Hospital />{t("nearestHospital")}</Link>
         <a href="tel:112" className="btn ghost"><Phone />112</a>
       </div>
+
+      {coords && <AlertsOptIn lat={coords.lat} lng={coords.lng} language={coords.language} t={t} />}
 
       {c && (
         <>

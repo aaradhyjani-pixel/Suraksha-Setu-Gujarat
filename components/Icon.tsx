@@ -78,6 +78,13 @@ export const Shield = ({ size = 21, className }: Props) => (
   </svg>
 );
 
+export const Bell = ({ size = 20, className }: Props) => (
+  <svg {...base(size)} className={className}>
+    <path d="M18 8.5a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16s-2-1.5-2-6.5Z" />
+    <path d="M10.3 19a2 2 0 0 0 3.4 0" />
+  </svg>
+);
+
 export const Clock = ({ size = 21, className }: Props) => (
   <svg {...base(size)} className={className}><circle cx="12" cy="12" r="9" /><path d="M12 7.5V12l3 2" /></svg>
 );
