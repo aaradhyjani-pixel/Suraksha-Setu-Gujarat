@@ -34,10 +34,25 @@ export function alertsNear(alerts: LiveAlert[], lat: number, lng: number, distri
 // every agency is still listed.
 export function currentAlert(alerts: LiveAlert[]) {
   if (!alerts.length) return null;
-  const top = [...alerts].sort(
+
+  // A feed can carry both an older and a newer alert from the same agency
+  // for the same hazard at once (an update that hasn't displaced the
+  // original entry). Keeping the stale one could show a severity that's
+  // already been downgraded, or register a false "disagreement" between
+  // an agency and its own earlier alert — so only the newest per
+  // agency+hazard counts from here on.
+  const latestByAgencyHazard = new Map<string, LiveAlert>();
+  for (const a of alerts) {
+    const key = `${a.source_agency}|${a.hazard_type}`;
+    const prev = latestByAgencyHazard.get(key);
+    if (!prev || a.timestamp > prev.timestamp) latestByAgencyHazard.set(key, a);
+  }
+  const deduped = [...latestByAgencyHazard.values()];
+
+  const top = deduped.sort(
     (a, b) => SEVERITY_RANK[b.severity] - SEVERITY_RANK[a.severity] || b.timestamp.localeCompare(a.timestamp)
   )[0];
-  const sources = alerts
+  const sources = deduped
     .filter((a) => a.hazard_type === top.hazard_type)
     .map((a) => ({ agency: a.source_agency, severity: a.severity, headline: a.headline }));
   const conflict = new Set(sources.map((s) => s.severity)).size > 1;
