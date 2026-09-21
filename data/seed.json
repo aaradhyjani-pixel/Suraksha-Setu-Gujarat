@@ -1,0 +1,154 @@
+{
+  "dwelling_rules": [
+    { "dwelling_type": "*", "hazard_type": "*", "action_text": "Keep your phone charged, keep drinking water and documents ready, and follow official instructions." },
+
+    { "dwelling_type": "*", "hazard_type": "flood", "action_text": "Move documents, medicines and food to a high shelf. Switch off the main power if water enters. Do not walk or drive through moving water." },
+    { "dwelling_type": "flood_prone_lane", "hazard_type": "flood", "action_text": "Leave now for higher ground or a shelter. Your lane floods first. Take documents, medicines, a torch and drinking water." },
+    { "dwelling_type": "ground_floor", "hazard_type": "flood", "action_text": "Move valuables and food to an upper floor or a neighbour's roof access now. Switch off the main power before water reaches the sockets." },
+    { "dwelling_type": "mid_floor", "hazard_type": "flood", "action_text": "You have more time than ground-floor neighbours, but keep the same items ready. Check on them and help if you can." },
+    { "dwelling_type": "high_rise", "hazard_type": "flood", "action_text": "Stay on your floor. Do not use the lift or basement parking. Store two days of drinking water; supply may stop." },
+    { "dwelling_type": "kutcha_house", "hazard_type": "flood", "action_text": "A mud or tin-roofed home floods fastest and can weaken. Move to a concrete building or official shelter now, don't wait for water to enter." },
+    { "dwelling_type": "higher_ground", "hazard_type": "flood", "action_text": "You are likely safe where you are. Stay in, keep roads clear for rescue, and check on neighbours in low-lying lanes." },
+
+    { "dwelling_type": "*", "hazard_type": "cyclone", "action_text": "Stay indoors away from windows. Tie down loose objects on the roof and balcony. Keep a torch and radio ready; power will likely go." },
+    { "dwelling_type": "flood_prone_lane", "hazard_type": "cyclone", "action_text": "Move to a cyclone shelter before landfall. Storm surge and rain will flood your lane fastest." },
+    { "dwelling_type": "high_rise", "hazard_type": "cyclone", "action_text": "Move to an inner room or corridor away from glass. Upper floors feel stronger winds. Do not use the lift once power is unstable." },
+    { "dwelling_type": "kutcha_house", "hazard_type": "cyclone", "action_text": "A kutcha roof will not hold in strong wind. Move to the nearest concrete building or cyclone shelter well before landfall." },
+    { "dwelling_type": "higher_ground", "hazard_type": "cyclone", "action_text": "Stay indoors away from windows and secure loose roofing or sheets, storm surge is less of a risk for you but wind still is." },
+
+    { "dwelling_type": "*", "hazard_type": "heavy_rain", "action_text": "Avoid underpasses and open drains. Keep outdoor trips short and carry your phone charged." },
+    { "dwelling_type": "flood_prone_lane", "hazard_type": "heavy_rain", "action_text": "Water can rise quickly in your lane. Move essentials up now and be ready to leave if water crosses the doorstep." },
+    { "dwelling_type": "ground_floor", "hazard_type": "heavy_rain", "action_text": "Block door gaps, lift electrical items off the floor, and keep the main switch within reach." },
+    { "dwelling_type": "kutcha_house", "hazard_type": "heavy_rain", "action_text": "Check your roof and walls for leaks or softening. Move to a stronger neighbour's home if water is getting in." },
+
+    { "dwelling_type": "*", "hazard_type": "heatwave", "action_text": "Stay indoors from noon to 4pm. Drink water every hour even if not thirsty. Dizziness, confusion or no sweating needs a doctor." },
+    { "dwelling_type": "high_rise", "hazard_type": "heatwave", "action_text": "Top floors heat up the most. Move to a lower floor or shaded room in the afternoon and keep curtains closed." },
+    { "dwelling_type": "kutcha_house", "hazard_type": "heatwave", "action_text": "A tin or thatched roof traps heat badly. Hang a wet cloth or mat over it if you can, and spend the hottest hours in the shade outside." },
+
+    { "dwelling_type": "*", "hazard_type": "thunderstorm", "action_text": "Stay indoors. Unplug appliances and avoid the phone on a wired line. Away from windows, balconies and open terraces until it passes." },
+    { "dwelling_type": "high_rise", "hazard_type": "thunderstorm", "action_text": "Stay off the balcony and terrace, they carry the highest lightning risk in your building. Move to an inner room." },
+
+    { "dwelling_type": "*", "hazard_type": "earthquake", "action_text": "Drop, cover under something sturdy, and hold on until shaking stops. Stay away from windows and anything that can fall." },
+    { "dwelling_type": "high_rise", "hazard_type": "earthquake", "action_text": "Do not run for stairs or lifts during shaking. Drop and cover where you are; leave the building calmly only after it stops." },
+    { "dwelling_type": "kutcha_house", "hazard_type": "earthquake", "action_text": "Get away from the walls immediately if the structure is weak, an open space outside is safer than staying under a fragile roof." }
+  ],
+
+  "occupation_tips": [
+    { "occupation": "farmer", "hazard_type": "flood", "tip_text": "Move livestock and stored grain to higher ground today. Shift pumps and fertiliser bags above the flood line." },
+    { "occupation": "farmer", "hazard_type": "cyclone", "tip_text": "Harvest what is ready and cover stored produce. Do not go to the fields during the storm." },
+    { "occupation": "farmer", "hazard_type": "heavy_rain", "tip_text": "Clear field drainage channels and postpone spraying or fertiliser for 48 hours." },
+    { "occupation": "farmer", "hazard_type": "heatwave", "tip_text": "Work the field only before 11am and after 4pm. Water livestock three times a day and keep them shaded." },
+    { "occupation": "farmer", "hazard_type": "thunderstorm", "tip_text": "Leave open fields immediately. Do not shelter under a lone tree or near metal fencing or farm equipment." },
+
+    { "occupation": "fisherman", "hazard_type": "cyclone", "tip_text": "Do not go out to sea. Pull boats well above the high-tide line and secure fishing gear." },
+    { "occupation": "fisherman", "hazard_type": "heavy_rain", "tip_text": "Check the latest sea-condition advisory before heading out, seas can turn rough with little warning in this weather." },
+    { "occupation": "fisherman", "hazard_type": "thunderstorm", "tip_text": "Head to shore now if you're out. Lightning over open water is especially dangerous." },
+
+    { "occupation": "daily_wage_worker", "hazard_type": "heatwave", "tip_text": "Ask for water breaks and shade every hour if working outdoors. Heat stroke can set in fast with no warning." },
+    { "occupation": "daily_wage_worker", "hazard_type": "heavy_rain", "tip_text": "Outdoor and construction sites get dangerous in heavy rain, loose scaffolding and slippery surfaces especially. Ask about a delay if conditions look unsafe." },
+    { "occupation": "daily_wage_worker", "hazard_type": "thunderstorm", "tip_text": "Come down from any height or scaffolding and move away from metal structures until it passes." },
+
+    { "occupation": "healthcare_worker", "hazard_type": "*", "tip_text": "If you're on duty, expect higher patient load during and after this event, keep your own supplies and transport plan ready so you can stay." },
+
+    { "occupation": "school_parent", "hazard_type": "flood", "tip_text": "Check the school's closure notice before sending children. If they're already there, collect them early, routes may close by evening." },
+    { "occupation": "school_parent", "hazard_type": "cyclone", "tip_text": "Schools will likely close. Keep children indoors and away from windows." },
+    { "occupation": "school_parent", "hazard_type": "heavy_rain", "tip_text": "Check for a closure notice and plan pickup before peak rain, avoid routes through underpasses." },
+    { "occupation": "school_parent", "hazard_type": "heatwave", "tip_text": "Send children with a full water bottle and a cap, and check for revised school timings." },
+    { "occupation": "school_parent", "hazard_type": "thunderstorm", "tip_text": "Keep children indoors and away from windows until it passes, and don't let them go back out for the school run yet." }
+  ],
+
+  "vulnerability_tips": {
+    "elderly": { "*": "Check on elderly family members every few hours and keep their regular medicines within reach.", "heatwave": "Elderly people overheat quickly. Keep them in the coolest room and give water, ORS or buttermilk regularly." },
+    "infant_or_pregnant": { "*": "Keep a hospital bag, ID and any medical records ready in case you need to move quickly.", "heatwave": "Infants and pregnant women dehydrate faster. Keep them cool, hydrated, and watch for unusual drowsiness or reduced urination." },
+    "disability": { "*": "Tell a neighbour or the helpline now if you need help to move. Keep mobility aids and medicines packed by the door." },
+    "chronic_illness": { "*": "Keep at least a week's supply of your regular medicines and your prescription with you in case pharmacies are closed." },
+    "livestock": { "*": "Move animals to a safe, sheltered spot and keep two days of fodder and water ready.", "flood": "Untie animals if you cannot move them. Tied animals drown; untied animals can swim to safety." }
+  },
+
+  "helplines": [
+    { "name": "National emergency number", "contact": "112" },
+    { "name": "NDMA disaster helpline", "contact": "1078" },
+    { "name": "State emergency operations centre", "contact": "1070" },
+    { "name": "Women's helpline", "contact": "181" }
+  ],
+
+  "hazard_guide": {
+    "flood": {
+      "before": [
+        "Keep an emergency kit ready: torch, spare batteries, ID copies, some cash, and a 3-day supply of medicines.",
+        "Know the nearest higher ground or official shelter and the route to reach it on foot.",
+        "Keep drinking water stored in sealed containers, not open ones that floodwater can reach.",
+        "Charge your phone and any power bank whenever there's an active flood warning for your area."
+      ],
+      "after": [
+        "Do not drink tap water until authorities confirm it's safe — floodwater often contaminates supply lines.",
+        "Avoid walking through standing water: it can hide open drains, live wires or debris.",
+        "Check your home for structural damage and gas leaks before turning on electricity.",
+        "Boil or purify any water you must use until the supply is officially declared safe again."
+      ]
+    },
+    "cyclone": {
+      "before": [
+        "Secure or bring indoors anything loose on a roof, balcony or yard — it becomes a projectile in high wind.",
+        "Fill containers with drinking water and charge all devices; power and supply often cut before landfall.",
+        "Know your nearest cyclone shelter if you're in a coastal or low-lying area.",
+        "Keep important documents in a waterproof bag."
+      ],
+      "after": [
+        "Stay indoors until officials confirm the storm has fully passed — a calm 'eye' can be followed by more wind.",
+        "Watch for downed power lines and treat every one as live; report them rather than touching or moving them.",
+        "Avoid floodwater left behind — it can be contaminated and hide hazards.",
+        "Check your roof and structure for damage before assuming it's safe to stay."
+      ]
+    },
+    "heavy_rain": {
+      "before": [
+        "Clear drains and gutters near your home if you safely can, to reduce local waterlogging.",
+        "Plan routes that avoid underpasses and low-lying roads before you need to travel.",
+        "Keep an eye on official updates rather than assuming rain will ease on its own timeline."
+      ],
+      "after": [
+        "Avoid driving or walking through any road with standing water — depth is hard to judge from outside.",
+        "Watch for weakened trees, walls or overhead wires after prolonged rain.",
+        "Let waterlogged areas drain and dry before resuming normal outdoor activity there."
+      ]
+    },
+    "heatwave": {
+      "before": [
+        "Plan outdoor work or errands for before 11am or after 4pm, when it's less severe.",
+        "Keep ORS, buttermilk or lemon water at home, not just plain water.",
+        "Check on elderly neighbours or relatives who live alone before the heat peaks."
+      ],
+      "after": [
+        "Continue drinking water through the day even once it feels cooler — dehydration effects can linger.",
+        "Watch yourself and family for delayed symptoms: dizziness, headache or unusual fatigue.",
+        "Ease back into normal outdoor activity gradually rather than all at once."
+      ]
+    },
+    "thunderstorm": {
+      "before": [
+        "Unplug sensitive electronics if a storm is forecast — sudden surges are common.",
+        "Bring in anything on a terrace or balcony that wind could turn into a hazard.",
+        "Note your indoor safe spot, away from windows, before the storm arrives."
+      ],
+      "after": [
+        "Wait at least 30 minutes after the last thunder before going back outside.",
+        "Check for damage to aerials, wiring or trees near your home before touching anything unfamiliar.",
+        "If someone was struck by lightning, call for emergency help immediately — it is a medical emergency, not something to wait out."
+      ]
+    },
+    "earthquake": {
+      "before": [
+        "Know your household's Drop, Cover, and Hold On spot in each room — under a sturdy table, away from glass.",
+        "Secure heavy furniture, shelving or water heaters that could tip over.",
+        "Keep sturdy shoes near your bed — broken glass after a quake is a common injury at night."
+      ],
+      "after": [
+        "Check yourself and others for injuries before checking property.",
+        "Expect aftershocks — they can come minutes, hours or days later, so stay cautious near damaged structures.",
+        "If you smell gas or hear hissing, leave immediately and shut off the supply if you can do so safely, don't use switches or flames.",
+        "Avoid damaged buildings until they've been checked — don't re-enter to retrieve belongings."
+      ]
+    }
+  }
+}
